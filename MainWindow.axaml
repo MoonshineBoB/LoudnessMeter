@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="LoudnessMeter.MainWindow"
+        Title="LoudnessMeter">
+    <StackPanel>
+        <Grid RowDefinitions="Auto, *, Auto">
+        <!-- Top -->
+        <Grid Row="0" Height="40" ColumnDefinitions="Auto, Auto, *, Auto, Auto">
+            <Rectangle Grid.Column="0" Fill="Chartreuse" Width="40"></Rectangle>
+            <Rectangle Grid.Column="1" Fill="Beige" Width="40"></Rectangle>
+            <StackPanel Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Label FontWeight="Black">Meter.</Label>
+                <Label FontWeight="Medium">for YouTube</Label>
+            </StackPanel>
+            <Rectangle Grid.Column="3" Fill="AliceBlue" Width="40"></Rectangle>
+            <Rectangle Grid.Column="4" Fill="BurlyWood" Width="40"></Rectangle>
+
+        </Grid>
+            <!-- Main -->
+            <Grid Row="1" Background="LavenderBlush" ColumnDefinitions="Auto, Auto, *">
+
+            </Grid>
+        <!-- Footer -->
+        <Grid Row="2" Background="Aquamarine"></Grid>
+        </Grid>
+
+    </StackPanel>
+</Window>
